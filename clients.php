@@ -13,7 +13,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <?php include('head.php'); ?>
 <style>
   /* form border */
@@ -21,10 +21,12 @@
     border: solid #00000024 1px !important;
     padding: 10px !important;
   }
+
   .form-control:focus {
     border: solid #00000024 1px !important;
     padding: 10px !important;
   }
+
   /* close button */
   .btn-close {
     background: #000000 var(--bs-btn-close-bg) center / 1em auto no-repeat !important;
@@ -32,14 +34,10 @@
 </style>
 
 <body class="g-sidenav-show  bg-gray-100">
-  <?php include('aside.php'); ?>
+  <?php include('sidebar.php'); ?>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
     <!-- Navbar -->
-    <?php include('navbartest.php'); ?>
-
-
-
-
+    <?php include('topbar.php'); ?>
     <!-- End Navbar -->
     <div class="container-fluid py-1">
       <div class="row">
@@ -95,13 +93,12 @@
                       <td class="align-middle text-center text-sm">
                         <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
                       </td>
+                      </a>
                       <td class="align-middle">
                         <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                           Edit
-                        </a>
                       </td>
                     </tr>
-
                   </tbody>
                 </table>
               </div>

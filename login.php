@@ -13,7 +13,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <?php include 'head.php'; ?>
 
 <body class="">
