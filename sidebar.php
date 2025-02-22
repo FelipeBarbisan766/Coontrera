@@ -28,9 +28,9 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="pages/virtual-reality.html">
-            <i class="material-symbols-rounded opacity-5">view_in_ar</i>
-            <span class="nav-link-text ms-1">Virtual Reality</span>
+          <a class="nav-link text-dark" href="calendar.php">
+            <i class="material-symbols-rounded opacity-5">assignment</i>
+            <span class="nav-link-text ms-1">Agenda</span>
           </a>
         </li>
         <li class="nav-item">
@@ -62,7 +62,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="pages/sign-up.html">
-            <i class="material-symbols-rounded opacity-5">assignment</i>
+            <i class="material-symbols-rounded opacity-5">view_in_ar</i>
             <span class="nav-link-text ms-1">Sign Up</span>
           </a>
         </li>

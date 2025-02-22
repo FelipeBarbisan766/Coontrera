@@ -1,20 +1,27 @@
-<!--
-=========================================================
-* Material Dashboard 3 - v3.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html lang="pt-BR">
-<?php include('head.php'); ?>
+<?php include('head.php');
+include('conexao.php');
+
+if (isset($_POST['name']) && isset($_POST['cpf']) && isset($_POST['phone']) && isset($_POST['address'])) {
+  $name = $_POST['name'];
+  $cpf = $_POST['cpf'];
+  $phone = $_POST['phone'];
+  // $address = $_POST['address'];
+  $address = null;
+  $dateInit = date('Y-m-d');
+  $isActive = 1;
+  $plan = $_POST['plan'];
+
+  $sql = "INSERT INTO client (cl_name, cl_cpf, cl_phone, cl_address, cl_dateInit, cl_isActive, planID) VALUES ('$name', '$cpf', '$phone', '$address', '$dateInit', '$isActive','$plan')";
+  $result = mysqli_query($conexao, $sql);
+  if ($result) {
+
+  } else {
+    echo '<script>alert("Erro ao cadastrar cliente!");</script>';
+  }
+}
+?>
 <style>
   /* form border */
   .form-control {
@@ -70,35 +77,39 @@
                     </tr>
                   </thead>
                   <tbody>
+                    <?php
+
+                    $slq_client = mysqli_query($conexao, "SELECT c.cl_name as client, c.cl_cpf as cpf, c.cl_phone as phone, p.pl_name as plan, c.cl_dateInit as dateInit FROM client as c INNER JOIN plan as p on c.planID=p.planID WHERE c.cl_isActive IS TRUE ORDER BY c.cl_name ASC");
+                    while ($client = mysqli_fetch_array($slq_client)) {
+                      echo '
                     <tr>
                       <td>
                         <div class="d-flex px-2 py-1">
-                          <!-- <div>
-                            <img src="assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                          </div> -->
                           <div class="d-flex flex-column justify-content-center">
-                            <h6>Felipe Adrian Lourenço Barbisan</h6>
+                            <h6>' . $client['client'] . '</h6>
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">422.770.778-10</p>
+                        <p class="text-xs font-weight-bold mb-0">' . $client['cpf'] . '</p>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="text-secondary text-xs font-weight-bold">(16)99720-6749</span>
+                        <span class="text-secondary text-xs font-weight-bold">' . $client['phone'] . '</span>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Plano 2</span>
+                        <span class="badge badge-sm bg-gradient-success">' . $client['plan'] . '</span>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                        <span class="text-secondary text-xs font-weight-bold">' . $client['dateInit'] . '</span>
                       </td>
                       </a>
                       <td class="align-middle">
                         <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
                           Edit
                       </td>
-                    </tr>
+                    </tr>';
+                    }
+                    ?>
                   </tbody>
                 </table>
               </div>
@@ -154,8 +165,8 @@
             <!-- form  -->
             <!-- input name -->
             <div class="mb-3">
-              <label for="name" class="form-label font-weight-bold">Nome</label>
-              <input type="text" name="name" class="form-control" id="name" placeholder="Ex: José da Silva Sauro">
+              <label for="name" class="form-label font-weight-bold">Nome *</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Ex: José da Silva Sauro" required>
             </div>
             <hr>
             <!-- input CPF -->
@@ -176,8 +187,20 @@
               <input type="text" name="address" class="form-control" id="address" placeholder="Ex: Rua dos Bobos, 0">
             </div>
             <hr>
+            <div class="mb-3">
+              <label for="plan" class="form-label font-weight-bold">Selecione o Plano *</label>
+              <select class="form-select form-control" name="plan" aria-label="Default select example" required>
+                <?php 
+                $slq_plan = mysqli_query($conexao, "SELECT p.planID as planID, p.pl_name as plan FROM plan as p  WHERE p.pl_isActive IS TRUE ORDER BY p.pl_name ASC");
+                while ($plan = mysqli_fetch_array($slq_plan)) {
+                echo '
+                <option class="form-control" value="'.$plan['planID'].'">'.$plan['plan'].'</option>';}
+                ?>
+              </select>
+            </div>
+            <hr>
             <!-- <div class="mb-3">
-              <label for="descript" class="form-label">Example textarea</label>
+              <label for="descript" class="form-label">Descrição</label>
               <textarea class="form-control" name="descript" id="descript" rows="3" placeholder="(Opcional)"></textarea>
             </div> -->
           </div>
