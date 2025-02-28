@@ -17,31 +17,31 @@
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="#">
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="#story">
                     <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
-                    #
+                    Nossa Historia
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="#">
+                  <a class="nav-link me-2" href="#services">
                     <i class="fa fa-user opacity-6 text-dark me-1"></i>
-                    #
+                    Nossos Serviços
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-2" href="#contact-us">
+                    <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
+                    Entre em Contato
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link me-2" href="#">
-                    <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
-                    #
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-2" href="Login.php">
                     <i class="fas fa-key opacity-6 text-dark me-1"></i>
-                    Sign In
+                    -----
                   </a>
                 </li>
               </ul>
-             
+              <a href="login.php" class="btn btn-sm mb-0 me-1 bg-gradient-dark">Login</a>
             </div>
           </div>
         </nav>
