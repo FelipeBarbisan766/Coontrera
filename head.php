@@ -19,6 +19,7 @@
   <link id="pagestyle" href="assets/css/material-dashboard.css?v=3.2.0" rel="stylesheet" />
 </head>
 <?php
+include_once("conexao.php");
 if(!isset($_SESSION)){
     session_start();
 }

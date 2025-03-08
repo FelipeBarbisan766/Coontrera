@@ -24,7 +24,7 @@
         <li class="nav-item">
           <a class="nav-link text-dark" href="billing.php">
             <i class="material-symbols-rounded opacity-5">receipt_long</i>
-            <span class="nav-link-text ms-1">Billing</span>
+            <span class="nav-link-text ms-1">Cobranças</span>
           </a>
         </li>
         <li class="nav-item">
@@ -34,9 +34,9 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="pages/rtl.html">
+          <a class="nav-link text-dark" href="plan.php">
             <i class="material-symbols-rounded opacity-5">format_textdirection_r_to_l</i>
-            <span class="nav-link-text ms-1">RTL</span>
+            <span class="nav-link-text ms-1">Planos</span>
           </a>
         </li>
         <li class="nav-item">
