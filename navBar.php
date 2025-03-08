@@ -17,25 +17,25 @@
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="#story">
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="index.php#story">
                     <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
                     Nossa Historia
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="#services">
+                  <a class="nav-link me-2" href="index.php#services">
                     <i class="fa fa-user opacity-6 text-dark me-1"></i>
                     Nossos Serviços
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="#contact-us">
+                  <a class="nav-link me-2" href="index.php#contact-us">
                     <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
                     Entre em Contato
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="#">
+                  <a class="nav-link me-2" href="index.php#">
                     <i class="fas fa-key opacity-6 text-dark me-1"></i>
                     -----
                   </a>

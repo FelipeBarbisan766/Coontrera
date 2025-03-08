@@ -87,17 +87,15 @@
 
                     if ($quantEmail == 1) {
                       $usuario = $sql_email->fetch_assoc();
+                      $_SESSION['cod'] = $usuario['employeeID'];
+                      $_SESSION['name'] = $usuario['em_name'];
+                      $_SESSION['role'] = $usuario['em_role'];
+                      echo '<script>window.location.href = "dashboard.php";</script>';
                     } else {
-                      echo '<div class="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
+                      echo '<div class="alert alert-danger text-white" role="alert">
                               <span class="font-medium">Erro!  Usuário ou senha incorretos. </span>
                               </div>';
                     }
-
-                    $_SESSION['cod'] = $usuario['employeeID'];
-                    $_SESSION['name'] = $usuario['em_name'];
-                    $_SESSION['role'] = $usuario['em_role'];
-
-                    echo '<script>window.location.href = "dashboard.php";</script>';
                   }
                 }
                 ?>
