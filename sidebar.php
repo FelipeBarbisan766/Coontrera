@@ -10,31 +10,31 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active bg-gradient-dark text-white" href="dashboard.php">
+          <a class="nav-link <?php if($indexPage == 1){echo 'active bg-gradient-dark text-white';}else{echo 'text-dark';} ?>" href="dashboard.php">
             <i class="material-symbols-rounded opacity-5">dashboard</i>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="Clients.php">
+          <a class="nav-link  <?php if($indexPage == 2){echo 'active bg-gradient-dark text-white';}else{echo 'text-dark';} ?>" href="Clients.php">
             <i class="material-symbols-rounded opacity-5">table_view</i>
             <span class="nav-link-text ms-1">Clientes</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="billing.php">
+          <a class="nav-link <?php if($indexPage == 3){echo 'active bg-gradient-dark text-white';}else{echo 'text-dark';} ?>" href="billing.php">
             <i class="material-symbols-rounded opacity-5">receipt_long</i>
             <span class="nav-link-text ms-1">Cobranças</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="calendar.php">
+          <a class="nav-link <?php if($indexPage == 4){echo 'active bg-gradient-dark text-white';}else{echo 'text-dark';} ?>" href="calendar.php">
             <i class="material-symbols-rounded opacity-5">assignment</i>
             <span class="nav-link-text ms-1">Agenda</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="plan.php">
+          <a class="nav-link <?php if($indexPage == 5){echo 'active bg-gradient-dark text-white';}else{echo 'text-dark';} ?>" href="plan.php">
             <i class="material-symbols-rounded opacity-5">format_textdirection_r_to_l</i>
             <span class="nav-link-text ms-1">Planos</span>
           </a>

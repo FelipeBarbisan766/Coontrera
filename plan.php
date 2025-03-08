@@ -41,6 +41,7 @@ $typePeriod = [1 => "Dia", 2 => "Mês", 3 => "Bimestre", 4 => "Semenstre", 5 => 
 
 <body>
     <?php
+    $indexPage = 5;
     include_once("sidebar.php");
     ?>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ps">

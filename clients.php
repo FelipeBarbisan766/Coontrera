@@ -13,7 +13,7 @@ if (isset($_POST['name']) && isset($_POST['cpf']) && isset($_POST['phone']) && i
   $isActive = 1;
   $plan = $_POST['plan'];
 
-  $sql = "INSERT INTO client (cl_name, cl_cpf, cl_phone, cl_address, cl_dateInit, cl_isActive, planID) VALUES ('$name', '$cpf', '$phone', '$address', '$dateInit', '$isActive','$plan')";
+  $sql = "INSERT INTO client (cl_name, cl_cpf, cl_phone, cl_addres, cl_dateInit, cl_isActive, planID) VALUES ('$name', '$cpf', '$phone', '$address', '$dateInit', '$isActive','$plan')";
   $result = mysqli_query($conexao, $sql);
   if ($result) {
 
@@ -41,7 +41,9 @@ if (isset($_POST['name']) && isset($_POST['cpf']) && isset($_POST['phone']) && i
 </style>
 
 <body class="g-sidenav-show  bg-gray-100">
-  <?php include('sidebar.php'); ?>
+  <?php 
+  $indexPage = 2;
+  include('sidebar.php'); ?>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
     <!-- Navbar -->
     <?php include('topbar.php'); ?>
