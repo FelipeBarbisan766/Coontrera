@@ -1,19 +1,6 @@
-<!--
-=========================================================
-* Material Dashboard 3 - v3.2.0
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <?php
 include('head.php');
 include('conexao.php');
@@ -32,104 +19,7 @@ include('conexao.php');
     <!-- End Navbar -->
     <div class="container-fluid py-2">
       <div class="row">
-        <div class="col-lg-8">
-          <div class="row">
-            <div class="col-xl-6 mb-xl-0 mb-4">
-              <div class="card bg-transparent shadow-xl">
-                <div class="overflow-hidden position-relative border-radius-xl">
-                  <img src="../assets/img/illustrations/pattern-tree.svg" class="position-absolute opacity-2 start-0 top-0 w-100 z-index-1 h-100" alt="pattern-tree">
-                  <span class="mask bg-gradient-dark opacity-10"></span>
-                  <div class="card-body position-relative z-index-1 p-3">
-                    <i class="material-symbols-rounded text-white p-2">wifi</i>
-                    <h5 class="text-white mt-4 mb-5 pb-2">4562&nbsp;&nbsp;&nbsp;1122&nbsp;&nbsp;&nbsp;4594&nbsp;&nbsp;&nbsp;7852</h5>
-                    <div class="d-flex">
-                      <div class="d-flex">
-                        <div class="me-4">
-                          <p class="text-white text-sm opacity-8 mb-0">Card Holder</p>
-                          <h6 class="text-white mb-0">Jack Peterson</h6>
-                        </div>
-                        <div>
-                          <p class="text-white text-sm opacity-8 mb-0">Expires</p>
-                          <h6 class="text-white mb-0">11/22</h6>
-                        </div>
-                      </div>
-                      <div class="ms-auto w-20 d-flex align-items-end justify-content-end">
-                        <img class="w-60 mt-2" src="../assets/img/logos/mastercard.png" alt="logo">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6">
-              <div class="row">
-                <div class="col-md-6 col-6">
-                  <div class="card">
-                    <div class="card-header mx-4 p-3 text-center">
-                      <div class="icon icon-shape icon-lg bg-gradient-dark shadow text-center border-radius-lg">
-                        <i class="material-symbols-rounded opacity-10">account_balance</i>
-                      </div>
-                    </div>
-                    <div class="card-body pt-0 p-3 text-center">
-                      <h6 class="text-center mb-0">Salary</h6>
-                      <span class="text-xs">Belong Interactive</span>
-                      <hr class="horizontal dark my-3">
-                      <h5 class="mb-0">+$2000</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-6">
-                  <div class="card">
-                    <div class="card-header mx-4 p-3 text-center">
-                      <div class="icon icon-shape icon-lg bg-gradient-dark shadow text-center border-radius-lg">
-                        <i class="material-symbols-rounded opacity-10">account_balance_wallet</i>
-                      </div>
-                    </div>
-                    <div class="card-body pt-0 p-3 text-center">
-                      <h6 class="text-center mb-0">Paypal</h6>
-                      <span class="text-xs">Freelance Payment</span>
-                      <hr class="horizontal dark my-3">
-                      <h5 class="mb-0">$455.00</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 mb-lg-0 mb-4">
-              <div class="card mt-4">
-                <div class="card-header pb-0 p-3">
-                  <div class="row">
-                    <div class="col-6 d-flex align-items-center">
-                      <h6 class="mb-0">Payment Method</h6>
-                    </div>
-                    <div class="col-6 text-end">
-                      <a class="btn bg-gradient-dark mb-0" href="javascript:;"><i class="material-symbols-rounded text-sm">add</i>&nbsp;&nbsp;Add New Card</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body p-3">
-                  <div class="row">
-                    <div class="col-md-6 mb-md-0 mb-4">
-                      <div class="card card-body border card-plain border-radius-lg d-flex align-items-center flex-row">
-                        <img class="w-10 me-3 mb-0" src="../assets/img/logos/mastercard.png" alt="logo">
-                        <h6 class="mb-0">****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;7852</h6>
-                        <i class="material-symbols-rounded ms-auto text-dark cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Card">edit</i>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card card-body border card-plain border-radius-lg d-flex align-items-center flex-row">
-                        <img class="w-10 me-3 mb-0" src="../assets/img/logos/visa.png" alt="logo">
-                        <h6 class="mb-0">****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;5248</h6>
-                        <i class="material-symbols-rounded ms-auto text-dark cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Card">edit</i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
+        <div class="col-lg-12">
           <div class="card h-100">
             <div class="card-header pb-0 p-3">
               <div class="row">
@@ -198,44 +88,13 @@ include('conexao.php');
           </div>
         </div>
       </div>
-      
-      <footer class="footer py-4  ">
-        <div class="container-fluid">
-          <div class="row align-items-center justify-content-lg-between">
-            <div class="col-lg-6 mb-lg-0 mb-4">
-              <div class="copyright text-center text-sm text-muted text-lg-start">
-                © <script>
-                  document.write(new Date().getFullYear())
-                </script>,
-                made with <i class="fa fa-heart"></i> by
-                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
-                for a better web.
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">License</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 mt-4">
+      <!-- ---------------------------------------------------------------- -->
+      <div class="col-md-12 mt-4">
           <div class="card h-100 mb-4">
             <div class="card-header pb-0 px-3">
               <div class="row">
                 <div class="col-md-6">
-                  <h6 class="mb-0">Your Transaction's</h6>
+                  <h6 class="mb-0">Prestes a Vencer</h6>
                 </div>
                 <div class="col-md-6 d-flex justify-content-start justify-content-md-end align-items-center">
                   <i class="material-symbols-rounded me-2 text-lg">date_range</i>
@@ -320,6 +179,37 @@ include('conexao.php');
                   <div class="d-flex align-items-center text-dark text-sm font-weight-bold">
                     Pending
                   </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <footer class="footer py-4  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <div class="copyright text-center text-sm text-muted text-lg-start">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>,
+                made with <i class="fa fa-heart"></i> by
+                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
+                for a better web.
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">License</a>
                 </li>
               </ul>
             </div>
